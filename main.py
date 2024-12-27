@@ -2,10 +2,10 @@ import customtkinter as ct
 from tkinter.messagebox import showinfo
 from PIL import Image
 import random
-import time
+
 
 WINNING_COMBINATION = [{1,2,3},{4,5,6},{7,8,9},{1,4,7},{2,5,8},{3,6,9},{1,5,9},{3,5,7}]
-icon = Image.open("icon.png")
+icon = "icon.ico"
 
 class TicTacToe(ct.CTk):
     def __init__(self):
@@ -17,8 +17,7 @@ class TicTacToe(ct.CTk):
         
         self.geometry("363x467")
         self.configure(bg="white")
-        # self.iconphoto(False, ct.CTkImage(icon,size=(32,32)))
-        self.iconbitmap("icon.ico")
+        self.iconbitmap(icon)
         
         # create table
         self.canvas = ct.CTkCanvas(self,border=0,borderwidth=0)
