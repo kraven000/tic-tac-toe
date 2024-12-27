@@ -16,6 +16,7 @@ class TicTacToe(ct.CTk):
         
         self.geometry("363x467")
         self.configure(bg="white")
+        self.title("Tic Tac Toe")
         self.iconbitmap(icon)
         
         # create table
