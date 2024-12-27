@@ -1,6 +1,5 @@
 import customtkinter as ct
 from tkinter.messagebox import showinfo
-from PIL import Image
 import random
 
 
